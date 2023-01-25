@@ -11,11 +11,14 @@
     <script src="https://kit.fontawesome.com/800e591c39.js" crossorigin="anonymous"></script>
 <body>
     <aside>
-        <img src = '{% static "main/img/adastra_logo.png" %}' alt = 'Лого'>
-        <h5>Adastra</h5>
-        <ul>
-            <a href="{% url 'home' %}"><li><i class="fa-solid fa-house-user"></i>Главная</li></a>
-        </ul>
+        <a href = "{% url 'home' %}" ><img src = '{% static "main/img/adastra_logo.png" %}' alt = 'Лого'></a>
+        <a href = "{% url 'home' %}"><h5>Adastra</h5></a>
+        <div class = 'navigate'>
+            <a href="{% url 'items' %}"><p>Каталог</p></a>
+            <a href="{% url 'favorite' %}"><p>Избранное</p></a>
+            <a href="{% url 'about' %}"><p>О нас</p></a>
+            <a href="{% url 'office' %}"><p>Личный кабинет</p></a>
+        </div>
     </aside>
     <main>
         {% block content %}

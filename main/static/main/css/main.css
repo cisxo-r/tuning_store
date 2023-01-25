@@ -9,31 +9,44 @@ aside{
     height: 50px;
     background:black;
     color: #fff;
-    border-bottom: 2px solid #4d4d4d;
+    border-bottom: 3px solid #4d4d4d;
 }
 
 aside img{
     width: 60px;
+    height: 40px;
     float: left;
-    margin-left: 10px;
+    margin-top: 4px;
+    margin-left: 5px;
+    margin-right: 10px;
+}
 
+aside a{
+    text-decoration: none;
 }
 
 aside h5 {
-    margin-top: 12px;
-}
-
-
-aside ul{list-style: none;}
-aside ul li{
     color: #fff;
-    display: block;
-    margin-top: 10px;
-    transition: transform .5s ease;
+    margin-top: 12px;
+    text-decoration:none;
+    margin-right: 365px;
+    font-family:Georgia, 'Times New Roman', Times, serif
 }
 
 
-aside ul li:hover, aside ul a:hover{
+aside .navigate a {list-style:none;}
+aside .navigate p{
+    color: #fff;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 20px;
+    transition: transform .5s ease;
+    font-family:Georgia, 'Times New Roman', Times, serif
+
+}
+
+
+aside .navigate p:hover, aside .navigate  a:hover{
     color:#ff6e00;
     text-decoration: none;
     transform: scale(1.05);
